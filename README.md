@@ -45,3 +45,17 @@ Execute as [seeders](https://github.com/Vinicius-CS/api-laravel/tree/main/databa
 # Iniciando o Servidor
 Execute o comando abaixo para iniciar o servidor na [pasta principal do projeto](https://github.com/Vinicius-CS/api-laravel):
 - `php artisan serve`
+
+Utilize o link `localhost:8000/api/` para fazer as requisições na API de acordo com a [Documentação da API](https://app.swaggerhub.com/apis-docs/VINICIUSCRUZ/API-Laravel/1.0.0).
+
+# Consumindo a API
+Para consumir a API você pode utilizar o [Postman](https://www.postman.com/downloads/), utilizando da seguinte forma:
+- **Configurando os Headers:** Selecione a aba `Headers`  e desmarque o `Accept` e insira um novo com o valor `application/json`.
+- **Passando parâmetros via Body:** Selecione a aba `Body` e marque a opção `form-data`, em `Key` insira o nome da coluna e em `Value` o valor que você deseja atribuir à ela.
+- **Visualização dos dados retornados:** Para uma melhor visualização no console abaixo altere o `HTML` para `JSON`. 
+
+Cadastre um usuário e copie o token:
+![Cadastrando usuário](https://i.imgur.com/hRa9Ifv.png)
+
+Insira o token na aba `Authorization` sendo do tipo `Bearer Token`:
+![enter image description here](https://i.imgur.com/Ni2ByxN.png)
